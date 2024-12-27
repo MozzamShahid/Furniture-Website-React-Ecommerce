@@ -1,25 +1,33 @@
 import React from 'react'
+import { MdMenu } from "react-icons/md";
+import { IoSearch } from "react-icons/io5";
+import { FaRegUser } from "react-icons/fa6";
+// import { CiUser } from "react-icons/ci";
+// import { FiShoppingCart } from "react-icons/fi";
+import { BsCart2 } from "react-icons/bs";
 
-const Header = () => {
+
+
+import Logo from '../assets/logo-furntiure.svg'
+
+
+const Headers = () => {
   return (
-    <section className="flex justify-between items-center gap-10 text-white text-xl font-normal h-[80px]">
-      <div>
-        <h1 className="text-4xl" >AiChat</h1>
-      </div>
+    <section className="flex h-[80px] p-8 justify-between items-center">
+    <div className="flex items-center" >
+        <div><MdMenu className='w-8 h-8' /></div>
+        <div><h1 className='text-[32px] font-bold'>MENU</h1></div>
+    </div>
+    <div><img src={Logo} alt="furntiure logo" /></div>
 
-      <nav>
-        <ul className='flex gap-10 font-normal'>
-            <li>Home</li>
-            <li>Contact us</li>
-            <li>About us</li>
-        </ul>
-      </nav>
-
-      <div>
-        <button className="btn bg-blue-800 rounded-md border border-white px-5 py-2">Login</button>
-      </div>
+    <div className="flex items-center gap-4">
+    <div><IoSearch className='w-7 h-7' /></div>
+    <div><FaRegUser className='w-6 h-6' /></div>
+    <div><BsCart2 className='w-6 h-6' /></div>
+    </div>
+      
     </section>
   )
 }
 
-export default Header
+export default Headers

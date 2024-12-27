@@ -1,12 +1,14 @@
 import React from "react";
 import './App.css'
-import Header from "./components/Header";
-import Card from "./components/Card";
+import Annoucement from "./components/Annoucement";
+import Headers from "./components/Header";
+import Hero from "./components/Hero";
 function App() {
   return (
-    <div className="ml-36 mr-36">
-    <Header/>
-    <Card/>
+    <div>
+    <Annoucement/>
+    <Headers/>
+    <Hero/>
     </div>
   );
 }
